@@ -1,8 +1,5 @@
-package chapter_1.FunctionalInterface_and_lambda;
+package chapter_1.FunctionalInterface_and_lambda.funtionalInterface;
 
-import chapter_1.FunctionalInterface_and_lambda.diy.JavaFunctionInterface;
-import chapter_1.FunctionalInterface_and_lambda.diy.MyFunctionalInterface;
-import chapter_1.FunctionalInterface_and_lambda.diy.PureFunction;
 import java.util.function.BiFunction;
 import java.util.function.BinaryOperator;
 import java.util.function.Consumer;
@@ -11,7 +8,8 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
 
-public class FunctionalAndLambdaMain {
+public class FunctionalMain {
+/*
 
     public static void main(String[] args) {
         // 익명 내부 클래스 ( anonymous inner class )
@@ -87,9 +85,8 @@ public class FunctionalAndLambdaMain {
         BinaryOperator<Integer> binaryOperator = (number1, number2) -> number1 + number2;
         System.out.println("binaryOperator : " + binaryOperator.apply(20,20));
 
-        //🧡 강의 다 듣고 나서는 함수형 인터페이스를 왜 써야하는지 정리하기 🧡
-
     }
+*/
 
 
 }

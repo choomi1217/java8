@@ -1,4 +1,4 @@
-package chapter_1.FunctionalInterface_and_lambda.diy;
+package chapter_1.FunctionalInterface_and_lambda.funtionalInterface;
 
 
 /**
