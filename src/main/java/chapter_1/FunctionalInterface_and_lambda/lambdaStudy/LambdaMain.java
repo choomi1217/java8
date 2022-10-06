@@ -5,6 +5,7 @@ import java.util.function.IntConsumer;
 import java.util.function.Supplier;
 
 public class LambdaMain {
+/*
 
     public static void main(String[] args) {
         Supplier<Integer> get10 = () -> {
@@ -49,5 +50,6 @@ public class LambdaMain {
             printInt.accept(10);
         }
     }
+*/
 
 }
