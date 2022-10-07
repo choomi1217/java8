@@ -7,13 +7,16 @@ import java.util.function.UnaryOperator;
 import java.util.logging.Logger;
 
 public class MethodReferenceMain {
+/*
 
     public static void main(String[] args) {
-        /*
+        */
+/*
         UnaryOperator<String> sayHi = (name) -> {
             return "hi" + name;
         };
-        */
+        *//*
+
         UnaryOperator<String> sayHi = Greeting::sayHi;
         System.out.println(sayHi.apply("앵미1"));
 
@@ -33,5 +36,6 @@ public class MethodReferenceMain {
         Arrays.sort(names, String::compareToIgnoreCase);
         System.out.println(Arrays.toString(names));
     }
+*/
 
 }

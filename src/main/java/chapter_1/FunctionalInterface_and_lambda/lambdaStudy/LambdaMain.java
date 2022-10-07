@@ -12,12 +12,12 @@ public class LambdaMain {
             return 10;
         };
 
-        Foo foo = new Foo();
+        LambdaFoo foo = new LambdaFoo();
         foo.run();
 
     }
 
-    public static class Foo {
+    public static class LambdaFoo {
         public void run(){
 
             final int baseNum = 10;
