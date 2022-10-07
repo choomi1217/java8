@@ -1,0 +1,4 @@
+@startuml
+Foo <|-- DefaultFoo
+Bar <|-- DefaultFoo
+@enduml
