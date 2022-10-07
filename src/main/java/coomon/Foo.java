@@ -10,5 +10,9 @@ public interface Foo {
         System.out.println(getName().toUpperCase());
     }
 
+    static void printAnything(){
+        System.out.println("Foo");
+    }
+
     String getName();
 }

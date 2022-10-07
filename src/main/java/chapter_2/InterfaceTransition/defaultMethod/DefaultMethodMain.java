@@ -9,6 +9,8 @@ public class DefaultMethodMain {
         Foo foo = new DefaultFoo("oo");
         foo.printName();
         foo.printNameUpperCase();
+
+        Foo.printAnything();
     }
 
 }
