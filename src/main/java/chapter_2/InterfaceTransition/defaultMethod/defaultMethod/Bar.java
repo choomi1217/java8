@@ -1,6 +1,4 @@
-package chapter_2.InterfaceTransition.defaultMethod;
-
-import coomon.Foo;
+package chapter_2.InterfaceTransition.defaultMethod.defaultMethod;
 
 public interface Bar {
 

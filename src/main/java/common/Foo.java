@@ -1,4 +1,4 @@
-package coomon;
+package common;
 
 public interface Foo {
     public void printName();
