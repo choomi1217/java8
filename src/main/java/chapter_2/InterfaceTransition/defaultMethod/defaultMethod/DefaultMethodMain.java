@@ -1,8 +1,9 @@
-package chapter_2.InterfaceTransition.defaultMethod;
+package chapter_2.InterfaceTransition.defaultMethod.defaultMethod;
 
-import coomon.Foo;
+import common.Foo;
 
 public class DefaultMethodMain {
+/*
 
     public static void main(String[] args) {
 
@@ -12,5 +13,6 @@ public class DefaultMethodMain {
 
         Foo.printAnything();
     }
+*/
 
 }
