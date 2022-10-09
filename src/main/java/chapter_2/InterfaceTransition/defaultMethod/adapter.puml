@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface List{
+                method A() { }
+                method B() { }
+                method C() { }
+              }
+abstract class AbstractList{
+                             method A() { }
+                             method B() { }
+                             method C() { }
+                           }
+class AClass{
+        method A() { ... }
+}
+class BClass{
+               method B() { ... }
+}
+class CClass{
+               method C() { ... }
+}
+
+List <|.. AbstractList
+
+AbstractList <|.. AClass
+AbstractList <|.. BClass
+AbstractList <|.. CClass
+
+@enduml
