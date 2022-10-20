@@ -1,4 +1,6 @@
-package chapter_3.Stream.Stream.examples;
+package common;
+
+import java.util.Optional;
 
 public class OnlineClass {
 
@@ -7,6 +9,8 @@ public class OnlineClass {
     private String title;
 
     private boolean closed;
+
+    private Progress progress;
 
     public OnlineClass(Integer id, String title, boolean closed) {
         this.id = id;
@@ -37,4 +41,10 @@ public class OnlineClass {
     public void setClosed(boolean closed) {
         this.closed = closed;
     }
+
+    public Optional<Progress> getProgress() {
+        return Optional.ofNullable(progress);
+    }
+
+    public void setProgress(Progress progress) { this.progress = progress; }
 }
