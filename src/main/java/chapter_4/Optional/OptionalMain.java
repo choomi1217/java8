@@ -5,6 +5,7 @@ import common.Progress;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class OptionalMain {
 
@@ -18,6 +19,12 @@ public class OptionalMain {
 
         OnlineClass springBoot = new OnlineClass(1, "spring boot", false);
         springBoot.getProgress();
+
+        Optional<OnlineClass> spring = springClass.stream()
+            .filter(onlineClass -> onlineClass.getTitle().startsWith("spring"))
+            .findFirst();
+
+        boolean present = spring.isPresent();
 
     }
 }
