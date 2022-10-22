@@ -2,12 +2,12 @@ package chapter_4.Optional;
 
 import common.OnlineClass;
 import common.Progress;
-import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 public class OptionalMain {
+/*
 
     public static void main(String[] args) {
         List<OnlineClass> springClass = new ArrayList<>();
@@ -45,6 +45,7 @@ public class OptionalMain {
 
 
     }
+*/
 
     private static OnlineClass createNewClass() {
         return new OnlineClass(6, "spring boot - 6", false);
