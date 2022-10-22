@@ -20,11 +20,33 @@ public class OptionalMain {
         OnlineClass springBoot = new OnlineClass(1, "spring boot", false);
         springBoot.getProgress();
 
-        Optional<OnlineClass> spring = springClass.stream()
+        Optional<OnlineClass> optional = springClass.stream()
             .filter(onlineClass -> onlineClass.getTitle().startsWith("spring"))
             .findFirst();
 
-        boolean present = spring.isPresent();
+        boolean present = optional.isPresent();
+        OnlineClass aClass = optional.get();
 
+        optional.ifPresent(onlineClass -> System.out.println(onlineClass.getTitle()));
+        optional.orElseThrow(IllegalStateException::new);
+
+        OnlineClass bClass = optional.orElse(createNewClass());
+        System.out.println(bClass.getTitle());
+
+        OnlineClass cClass = optional.orElseGet(OptionalMain::createNewClass);
+        System.out.println(cClass.getTitle());
+
+        Optional<String> optionalTitle = optional.map(OnlineClass::getTitle);
+        System.out.println(optionalTitle.isPresent());
+
+        Optional<Optional<Progress>> optionalProgress = optional.map(OnlineClass::getProgress);
+        Optional<Progress> progress1 = optional.map(OnlineClass::getProgress).orElseThrow();
+        Optional<Progress> progress2 = optional.flatMap(OnlineClass::getProgress);
+
+
+    }
+
+    private static OnlineClass createNewClass() {
+        return new OnlineClass(6, "spring boot - 6", false);
     }
 }
