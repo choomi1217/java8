@@ -1,7 +1,7 @@
-package chapter_6.CompletableFuture;
+package chapter_6.CompletableFuture.Thread;
 
 public class ConcurrentMain {
-
+/*
     public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(()-> {
             System.out.println("Thread : " + Thread.currentThread().getName());
@@ -16,5 +16,5 @@ public class ConcurrentMain {
         System.out.println("Hello : " + Thread.currentThread().getName());
         thread.join();
         System.out.println(thread + "is finished");
-    }
+    }*/
 }
