@@ -17,3 +17,21 @@ public class ExecutorMain {
 
 }
 ```
+
+> 시간대를 두고 스레드 실행
+```java 
+ScheduledExecutorService executorService = Executors.newSingleThreadScheduledExecutor();
+executorService.schedule(getRun("hi"),3, TimeUnit.SECONDS);
+
+executorService.scheduleAtFixedRate(getRun("hi"),3,1, TimeUnit.SECONDS);
+```
+
+> Runnable
+```java
+public static Runnable getRun(String s){
+    return () -> System.out.println(s + Thread.currentThread().getName());
+}
+```
+
+Runnable 로 만든 스레드는 값을 반환 해주지 않으므로 Callable 사용.
+Callable이 반환 해주는 값을 받는 것이 Future
