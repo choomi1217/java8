@@ -7,7 +7,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.stream.Collectors;
 
 public class FutureMainSecond {
-
+/*
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         boolean throwError = true;
@@ -28,5 +28,5 @@ public class FutureMainSecond {
 
         System.out.println(hello.get());
 
-    }
+    }*/
 }
