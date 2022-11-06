@@ -17,7 +17,8 @@ world.get();
 ```
 
 ## Java8 이후엔 아래처럼 Thread 2개를 연결 할 수 있게 됐습니다.
-> "Hello"를 받는 World, 즉 서로 연간 관계가 이을 경우엔 아래처럼 
+> "Hello"를 받는 World, 즉 서로 연간 관계가 있을 경우엔 아래처럼
+### thenCompose
 ```java
 public class FutureMainSecond {
 
@@ -40,8 +41,8 @@ public class FutureMainSecond {
 }
 ```
 
-> 서로 연관은 없지만 비동기적으로 2가지를 실행을 해야 할 땐 (Combine)
-- hello와 World가  
+> 서로 연관은 없지만 비동기적으로 2가지를 실행을 해야 할 땐
+### Combine
 ```java
 public class FutureMainSecond {
 
@@ -65,10 +66,11 @@ public class FutureMainSecond {
 }
 ```
 
-> 서로 연관은 없지만 비동기적으로 많은걸 실행 해야 할 땐 (allOf)
+> 서로 연관은 없지만 비동기적으로 많은걸 실행 해야 할 땐
+### allOf
 - 모든 Future들의 결과 타입이 동일하다는 보장이 없다.
 - 그중에 어떤 것은 에러가 날 수도 있다.
-- 위 두가지 이유로 인해 결과가 무의미함. (null이 반환 됨..)
+- **_위 두가지 이유로 인해 결과가 무의미함 (null이 반환 됨)_**
 ```java
 CompletableFuture<String> hello = CompletableFuture.supplyAsync(() -> {
     System.out.println("Hello" + Thread.currentThread().getName());
@@ -125,6 +127,7 @@ public class FutureMainSecond {
 ##### 반환 타입이 어떤건지 몰라서 Object로 나오지만 현재는 String으로 바꿔도 무관합니다.
 
 > 아무거나 하나 빨리 끝나는 것
+### anyOf
 ```java
 CompletableFuture<Void> future = CompletableFuture.anyOf(hello, world).thenAccept(System.out::println);
 future.get();
@@ -133,6 +136,7 @@ future.get();
 ## CompletableFuture의 예외처리
 
 > exceptionally
+> 
 ```java
 boolean throwError = true;
 
