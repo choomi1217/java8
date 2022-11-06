@@ -7,6 +7,7 @@ import java.util.stream.IntStream;
 public class ArraysParallelSort {
 
     public static void main(String[] args) {
+
         int size = 1500;
         int[] numbers = new int[size];
         Random random = new Random();
