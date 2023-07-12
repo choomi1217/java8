@@ -1,8 +1,8 @@
 package basic.shallowCopy_deepCopy;
 
 public class Circle implements Cloneable{
-    private final Point point;
-    private final double radius;
+    private Point point;
+    private double radius;
 
     public Circle(Point point, double radius) {
         this.point = point;
@@ -15,6 +15,14 @@ public class Circle implements Cloneable{
 
     public double getRadius() {
         return radius;
+    }
+
+    public void setPoint(Point point) {
+        this.point = point;
+    }
+
+    public void setRadius(double radius) {
+        this.radius = radius;
     }
 
     @Override
