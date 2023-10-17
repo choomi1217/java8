@@ -100,7 +100,6 @@ fabric.properties
 .gradle
 **/build/
 !src/**/build/
-build.gradle
 gradlew
 gradlew.bat
 /gradle
